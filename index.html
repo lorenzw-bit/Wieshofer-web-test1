@@ -8,20 +8,37 @@
        
         
 </head>
-<body style="background-color:blue;">
+<body style="background-color:lightblue;">
   <h1>Lorenz Wieshofer 5r</h1>
   <h2>Persönliche Daten:</h2>
-      <p>
         <ul>
-          <li>Geburtsdatum:03.06.20211</li>
-          <li>Lieblingsfarbe:Blau</li>
+          <li>Geburtsdatum: 03.06.20211</li>
+          <li>Lieblingsfarbe: Blau</li>
         </ul>
-      </p>
     <h2>Meine Lieblingsfächer</h2>
         <ol>
             <li>Sport</li>
             <li>Mathematik</li>
             <li>Religion</li>        
         </ol>
+    <h2>Meine Hobbys</h2>
+    <ul id="liste-hobbys"></ul>
+
+    
+    
+    
+    
+    
+    <script>
+  const hobbys = ["Fußball", "Gaming", "Lernen", "Lorenz Wieshofer"];  // deine eigenen Hobbys und Name eintragen
+  const liste = document.getElementById("liste-hobbys");
+  hobbys.forEach(h => {
+    let li = document.createElement("li");
+    li.textContent = h;
+    liste.appendChild(li);
+  });
+</script>
+
+        
 </body>
 
